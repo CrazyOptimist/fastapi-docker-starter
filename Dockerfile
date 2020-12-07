@@ -1,7 +1,7 @@
 FROM python:3.9-slim
-WORKDIR /lxt-api
+WORKDIR /app
 
-COPY requirements.txt /lxt-api/
+COPY requirements.txt /app
 RUN pip install -r requirements.txt
 COPY . .
 
